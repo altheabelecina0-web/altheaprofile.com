@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+<title> AltheaBelecina Personal WebPage </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Portfolio">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="author" content="Althea Belecina">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/33f381a85a.js" crossorigin="anonymous"></script>
+
+<style>
+	/* background color, position,text color,famiy font,text decoration,text align,animation,animation timeline, margins, padding, list style type, float, border, border raduis, box shadow, cursor, transition, display */
+
+/* overall */
+	body{
+	    background-color:white;
+	    margin:0px;
+	    color:#3d2d23;
+	}
+	h1{
+	    font-family:Playfair Display;
+	}
+	p,span,.names{
+	    font-family:Quicksand;
+	}
+	.boxs{
+	    background-color:#f7e9ed;
+	    margin:8px;
+	    height:650px;
+	    padding:20px;
+	    box-shadow: 5px 0px 5px gray;
+	}
+
+/* navigation bar */
+	nav{
+	    background-color:#1c1b1b;
+	    height:30px;
+	    padding-top:10px;
+	    padding-left:20px;
+
+	    position:fixed;
+            left:0px;
+	    right:0px;
+	    top:-40px; 
+	
+	    animation: slide;
+	    animation-timeline: scroll();
+	}
+	@keyframes slide{
+	    0%{margin-top:0px;}
+	    1.5%{margin-top:40px;}
+	    100%{margin-top:40px;}
+	}
+	nav ul{
+	    list-style-type:none;
+	    overflow:hidden;
+	    padding:0px;
+	    margin:0px;
+	}
+	nav a{
+	  Color:white;
+	  text-decoration:none;
+	  font-family:Quicksand;
+	  text-align: center;
+	  padding: 10px;
+	}
+	nav a:hover{
+	  color:gray;
+	}
+	nav li{
+	  float:left;
+	}
+	
+/* part one HOME */
+	#one{
+	    padding:0px;  
+	}
+	#one h1{
+	    position:absolute;
+	    right:570px;
+	    bottom:400px;
+	    color:white;
+	}
+	#one p{
+	   width: 480px;
+	   position:absolute;
+	   right:200px;
+	   bottom:280px;
+	   color:white;
+	}
+/*part two ABOUT*/
+	#two{
+	    text-align:center;
+	    padding-top: 150px;
+	}
+	#two p{ 
+	    margin-left:450px;
+	    width: 500px;
+	}
+	
+/* part three EXPERIENCE */
+	#three ul{
+	    list-style-type:none;
+	    overflow:hidden;
+	    float:left;
+	}
+	#three img{
+	    border-radius: 2rem;
+	    width:100px;
+	    margin-top: 25px;
+	}
+	.names li{
+	    width:250px;
+	    padding: 20px;
+	    border: 1px solid #969696;
+	    margin-left: 30px;
+	    margin-top:30px;
+	}
+	   #three div{
+	   background-color:#1c1b1b;	
+	   color: white;
+	   height:525px;
+	   width:600px;
+	   display:box;
+	   float:right;
+	   padding:30px;
+	   margin-right: 100px;
+	   border-radius: 20px 20px 0 0;
+	}
+	#three div .names li{
+	   color: white;
+	   margin-top: 40px;
+	}
+	#three div img{
+	   background-color: white;
+	}
+/* part four STUDIES */
+	#posit{
+	    padding-top:30px;
+	    padding-left:275px;
+	}
+	#posit img{
+	    border-radius: 1rem;
+	    height:300px;
+	    width:230px;
+            cursor: pointer;
+	    margin-left:50px;
+	    border: 1px solid #5ab9ea;
+	}
+	#posit img:hover {
+            border: 5px solid #5ab9ea;
+	    height:295px;
+            transition: 0.5s;
+	}
+	#four h1{
+	    text-align:center;
+	    margin-top:70px;
+	}
+	#text{
+	    margin-left:300px;
+	}
+	#text span{
+	    float:left;
+	    width:250px;
+	    display:flex;
+	    padding: 20px;
+	    text-align: center;
+	}
+/* quote*/
+	.quotebg{
+	    display: grid;
+	    place-items: center;
+	    height: 600px;
+	    background-image: url(baguio.jpg);
+	    border-radius: 3rem;
+	    background-size: cover;
+	    background-position: center;
+	    text-align:center;
+	    color: white;
+	    font-size: 30px;
+	}
+	.quotebg p{
+	    width:1000px;
+	}
+/*part five CONTACTS */
+	#five{
+	    background-color:#1c1b1b;
+	    text-align:center; 
+	}
+	#five #last{
+	    margin-top:300px;
+	    color:white;
+	}
+	#five a{
+	    padding:20px;
+	}
+	#five i, #five p{
+	    color: white;
+	}
+</style>
+
+<body> 
+<!--paragraph, quote, h1, div, span, section,ul ,li ,links ,hr ,images, small letter, collerating class and id in css style-->
+
+ <nav>
+	<ul>
+		<li> <a  href="#one">  HOME  </a> </li>
+		<li> <a  href="#two">  ABOUT </a> </li>
+		<li> <a  href="#three"> EXPERIENCE </a> </li>
+		<li> <a  href="#four">  STUDIES  </a> </li>
+		<li> <a  href="#five">  SOCIALS </a> </li>
+	</ul>
+ </nav> 
+<div class="boxs" id="one">
+		
+	<img src="home.jpg" alt="my photo"> 
+
+	<h1> Althea Belecina </h1>
+
+	<p> Detail-oriented and tech-savvy professional seeking a Virtual Assistant role. Offering strong organizational skills, proficiency in digital workspace tools, and a proven ability to manage complex schedules and client communications. Seeking to leverage strong communication and multitasking skills to streamline operations and boost productivity for a growing business. </p> 
+
+</div>
+<div class="boxs" id="two">
+		<p> Hello my name is Althea and you are here at my official webpage. My goal is to help every brand come alive through assisting. In today's highly competitive digital space, it's important for online businesses to establish their presence as they would traditionally do in a retail space. Here is a short introduction of me; </p>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/IatL-zmbJOQ?si=E86mjViFOeaF2PmC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ </div>
+<div class="boxs" id="three">
+	<h1> Educational Background</h1>
+	<ul>
+		<li> <img src="dflomnhs.png" alt="DFLOMNHS LOGO" height="100px"> </li>
+		<li> <img src="dmmmsu.png" alt="DMMMSU LOGO" height="100px" > </li>
+		<li> <img src="ispsc.png" alt="ISPSC LOGO" height="100px" > </li>
+	</ul> 
+
+	<ul class="names">
+		<li>Doña Francisca Lacsamana de Ortega Memorial National High School (DFLOMNHS) 2017-2023 </li>
+		<li>Don Mariano Marcos Memorial State University Mid La Union Campus (DMMMSU-MLUC) 2023-2024 </li>
+		<li>Ilocos Sur Polytechnic State College (ISPSC) 2025 </li>
+	</ul>	
+		<div> <h1> I have worked with </h1> 
+		 <ul>
+			<li> <img src="dflomnhs.png" alt="DFLOMNHS LOGO" height="100px"> </li>
+			<li> <img src="transperfect.jpg" alt="TRANSPERFECT LOGO" height="100px"> </li>
+			<li> <img src="aragon.png" alt="ARAGON COMPANY LOGO" height="100px"> </li>
+		</ul>
+		<ul class="names">
+			<li> Doña Francisca Lacsamana de Ortega Memorial National High School(DFLOMNHS) 2022-2023</li>
+			<li> Transperfect 2024 </li>
+			<li> The Aragon Company 2024 </li>
+		</ul> </div>
+</div>
+<div class="boxs" id="four">
+	 <h1> Studies Involving me </h1>
+		<section id="posit"
+			<a href="research/MMW-RRL-GROUP8 (1).pdf"> <img src="BLENDEDLEARNINGMMW.jpg" alt="research for MMW" > </a> 
+			<a href="research/EFFECTS OF THE INCREASING POPULARITY 1234.pdf"> <img src="EIPDACJMFA.jpg" alt="research for PR 2" > </a> 
+	   		<a href="research/MULTIPLE INTELLIGENSE OF SHS STUDENTS.pdf"> <img src="MI.jpg" alt="research for PR 1" > </a> 
+		</section>
+		<section id="text" >
+			<span> <b> The Effects of Blended Learning Environment on the Critical Thinking and Problem-Solving Skills of the Students </b> </span>
+			<span> <b> Effects of the Increasing Popularity of Digital Arts on the Current Job Market for Freelance Artists </b> </span>
+			<span>  <b> Multiple Intelligence of SHS Student of DFLOMNHS SanBlas Bangar, La Union SY 2022-2023 </b>  </span>
+ 		</section>
+</div>	
+<div class="quotebg">
+
+	<p> <q> For me, becoming isn’t about arriving somewhere or achieving a certain aim. I see it instead as forward motion, a means of evolving, a way to reach continuously toward a better self. The journey doesn’t end. </q>  —Michelle Obama </p>
+
+</div>
+<hr>
+<div class="boxs" id="five">
+	
+		<p> contact me </p>
+	<div id="last">
+		<a href="https://www.facebook.com/althea.belecina.2024/"><i class="fa-brands fa-facebook"></i></a>
+		<a href="www.youtube.com/@orangeyam4308"> <i class="fa-brands fa-youtube"></i> </a>
+		<a href="https://www.linkedin.com/in/althea-belecina-597499292/"><i class="fa-brands fa-linkedin"></i> </a>
+                <small> <p> thankyou <3 </p>  <small>
+	</div>
+</div>
+
+</body>
+</html>
